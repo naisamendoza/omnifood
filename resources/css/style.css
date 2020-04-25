@@ -35,12 +35,10 @@ html {
 
 .flex-row {
     display: flex;
-    align-items: center;
 }
 
 section {
     padding: 80px 0;
-    height: 100vh;
 }
 
 a {
@@ -97,7 +95,7 @@ h3 {
 .long-copy {
     line-height: 150%;
     width: 70%;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 /* ----------------------------- */
@@ -182,6 +180,9 @@ header {
     border-bottom: 2px solid #cf6d17;
 }
 
+nav .flex-row {
+    align-items: center;
+}
 /* ----------------------------- */
 /* ICONS */
 /* ----------------------------- */
@@ -190,4 +191,108 @@ header {
     font-size: 350%;
     color: #cf6d17;
     display: block;
+}
+
+/* ----------------------------- */
+/* SECTIONS */
+/* ----------------------------- */
+
+#section-favorite {
+    padding: 0;
+}
+
+#section-features .long-copy {
+    margin-bottom: 40px;
+}
+
+#section-how {
+    background-color: #f4f4f4;
+}
+
+/* ----------------------------- */
+/* MEALS */
+/* ----------------------------- */
+
+.meal-showcase {
+    list-style-type: none;
+    display: flex;
+    flex: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.meal-showcase li {
+    flex: 25%;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    opacity: 0.7;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* ----------------------------- */
+/* HOW IT WORKS */
+/* ----------------------------- */
+
+.steps div {
+    display: inline-block;
+    min-width: 55px;
+    min-height: 55px;
+    color: #cf6d17;
+    border: 2px solid #cf6d17;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.steps {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.steps:last-of-type {
+    margin-bottom: 80px;
+}
+
+.step-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.step-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+
+}
+
+.app-screen {
+    max-width: 40%;
+    height: auto;
+}
+
+.btn-app img {
+    margin-right: 10px;
+    height: 50px;
+    width: auto;
 }
