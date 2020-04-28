@@ -1,0 +1,250 @@
+
+/* Big tablet to  pc from 1024 to 1200px */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+    
+    .row {
+        padding: 0 2%;
+    }
+}
+
+/* small to big tablets from 768 to 1023px */
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+    
+    .long-copy {
+        width: 80%;
+    }
+    
+    .steps {
+        margin-bottom: 40px;
+    }
+    
+    .steps:last-of-type {
+        margin-bottom: 60px;
+    }
+    
+    .step-box:first-child {
+        margin-top: 10px;
+    }
+
+    .step-box:last-child {
+        margin-top: 10px;
+    }
+    
+    .btn-app img {
+        height: 45px;
+    }
+    
+    .app-screen {
+        max-width: 50%;
+    }
+    
+    .icon-sml {
+        width: 20px;
+        margin-right: 5px;
+    }
+    
+    #section-cities .box {
+        padding: 0.5%;
+    }
+    
+    .plan-box {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .plan-price span {
+        font-size: 250%;
+        letter-spacing: 1px;
+    }
+    
+    .plan-box li {
+        font-size: 90%;
+    }
+    
+    .contact-form {
+        width: 80%;
+    }
+}
+
+/* small tablets to big phones from 481 to 767px */
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+    
+    section {
+        padding: 30px 0;
+    }
+    
+    .row, .hero-text-box {
+        padding: 0 7%;
+    }
+    
+    .col {
+        width: 100%;
+    }
+    
+    .navigation {
+        display: none;
+    }
+    
+    h1 {
+        font-size: 180%;
+    }
+    
+    h2 {
+        font-size: 150%;
+    }
+    
+    .box p {
+        font-size: 100%;
+    }
+    
+    .long-copy {
+        width: 100%;
+    }
+    
+    .step-box:first-child {
+        text-align: center;
+        padding-right: 0;
+    }
+    
+    .app-screen {
+        max-width: 40%;
+    }
+    
+    #section-cities .box {
+        padding: 4%;
+    }
+    
+    .contact-form {
+        width: 100%;
+    }
+    
+    .steps {
+        align-items: center;
+    }
+    
+    .steps p {
+        font-size: 120%;
+    }
+    
+    .step-box {
+        padding-bottom: 10px;
+    }
+    
+    .steps:last-of-type {
+        margin-bottom: 40px;
+    }
+    
+    .steps div {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+    }
+    
+    .download-app {
+        text-align: center;
+    }
+    
+    #section-testimonials {
+        height: auto;
+    }
+    
+    .testimonials blockquote, .testimonials blockquote:before {
+        padding-top: 20px;
+    }
+    
+    .plan-price span {
+        font-size: 350%;
+        letter-spacing: 1px;
+    }
+    
+    .plan-box li {
+        font-size: 100%;
+    }
+    
+    .plan-box {
+        margin-bottom: 20px;
+    }
+    
+    #section-price .col {
+        margin: 0;
+    }
+    
+    footer ul, .socials {
+        justify-content: center;
+    }
+    
+    .socials {
+        padding-top: 10px;
+    }
+    
+    .contact-form .row {
+        margin-bottom: 10px;
+    }
+    
+    .contact-form label {
+        margin-left: 10px;
+    }
+
+}
+
+/* small phones from 0 to 480px */
+@media only screen and (max-width: 480px) {   
+    section {
+        padding: 20px 0;
+    }
+    
+    .app-screen {
+        max-width: 60%;
+    }
+    
+    .btn-app img {
+        height: 40px;
+    }
+    
+    .logo {
+        height: 90px;
+    }
+    
+    h1 {
+        font-size: 160%;
+    }
+    
+    h2 {
+        font-size: 140%;
+    }
+    
+    footer p {
+        margin-top: 10px;
+    }
+    
+    footer {
+        padding: 10px 0 30px;
+    }
+    
+    .contact-form label {
+        margin-left: 0;
+    }
+    
+    input, textarea, select {
+        margin-top: 5px;
+    }
+    
+    .btn:link, .btn:visited, input[type=submit] {
+        padding: 8px 18px;
+    }
+}
