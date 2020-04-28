@@ -115,7 +115,7 @@ h3 {
 /* BUTTONS */
 /* ----------------------------- */
 
-.btn:link, .btn:visited {
+.btn:link, .btn:visited, input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     border-radius: 1.5em;
@@ -128,26 +128,33 @@ h3 {
     color: #e67e22;
 }
 
-.btn-full:link, .btn-full:visited {
+.btn-full:link, .btn-full:visited, input[type=submit] {
     color: #fff;
     background-color: #e67e22;
 }
 
-.btn:hover, .btn:active {
+.btn:hover, .btn:active, input[type=submit]:hover, input[type=submit]:active {
     background-color: #cf6d17;
     border: 1px solid #cf6d17;
     color: #fff;
 }
 
 /* ----------------------------- */
+/* COMMONS */
+/* ----------------------------- */
+
+header, #section-testimonials {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+/* ----------------------------- */
 /* HEADER */
 /* ----------------------------- */
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
 }
 
 .hero-text-box {
@@ -228,10 +235,13 @@ nav .flex-row {
     margin-bottom: 40px;
 }
 
-#section-how {
+#section-how, #section-price {
     background-color: #f4f4f4;
 }
 
+#section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("img/back-customers.jpg");
+}
 /* ----------------------------- */
 /* MEALS */
 /* ----------------------------- */
@@ -340,4 +350,190 @@ nav .flex-row {
 
 .cities-info a {
     font-size: 90%;
+}
+
+/* ----------------------------- */
+/* CUSTOMER TESTIMONIALS */
+/* ----------------------------- */
+
+#section-testimonials h2, blockquote, cite {
+    color: #fff;
+}
+
+.testimonials cite {
+    margin-top: 25px;
+    font-size: 90%;
+    display: block;
+}
+
+.testimonials img {
+    width: 45px;
+    height: auto;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    padding: 2%;
+    line-height: 145%;
+    position: relative;
+}
+
+.testimonials blockquote::before {
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+}
+
+/* ----------------------------- */
+/* PRICE PLAN */
+/* ----------------------------- */
+
+.plan-price span {
+    font-size: 350%;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.plan-price {
+    color: #cf6d17;
+    margin-bottom: 20px;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box ul {
+    list-style-type: none;
+}
+
+.plan-box li {
+    line-height: 150%;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-radius: 5px;
+}
+
+/* ----------------------------- */
+/* CONTACT FORM */
+/* ----------------------------- */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    border-radius: 3px;
+    padding: 7px;
+    border: 2px solid #cccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+/* ----------------------------- */
+/* FOOTER */
+/* ----------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 10px 0 40px;
+    font-size: 80%;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+}
+
+footer li {
+    margin-right: 20px;
+}
+
+footer li a:link, footer li a:visited {
+    color: #888;
+    border: 0;
+    transition: color 0.2s;
+}
+
+footer li a:hover, footer li a:active {
+    color: #ddd;
+}
+
+footer li:last-child {
+    margin-right: 0;
+}
+
+footer p {
+    margin-top: 20px;
+    color: #888;
+    text-align: center;
+}
+
+.socials {
+    justify-content: flex-end;
+}
+
+.socials li {
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover, ion-social-facebook:active {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover, ion-social-twitter:active {
+    color: #00aced;
+}
+
+.ion-social-googleplus:hover, ion-social-googleplus:active {
+    color: #dd4b39;
+}
+
+.ion-social-instagram:hover, ion-social-instagram:active {
+    color: #517fa4;
 }
