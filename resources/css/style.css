@@ -6,6 +6,7 @@ orange color - #cf6d17
 /* BASIC SETUP */
 /* ----------------------------- */
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -35,6 +36,8 @@ html, body {
 }
 
 .flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -51,6 +54,7 @@ a:link, a:visited {
     color: #cf6d17;
     padding-bottom: 1px;
     border-bottom: 1px solid #cf6d17;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -121,6 +125,7 @@ h3 {
     padding: 10px 30px;
     border-radius: 1.5em;
     border: 1px solid #e67e22;
+    -webkit-transition: background-color 0.2s, color 0.2s, border 0.2s;
     transition: background-color 0.2s, color 0.2s, border 0.2s;
     margin-right: 15px;
 }
@@ -155,6 +160,7 @@ header, #section-testimonials {
 /* ----------------------------- */
 
 header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
 }
 
@@ -163,6 +169,7 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -194,6 +201,7 @@ header {
     font-size: 90%;
     padding-bottom: 8px;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
@@ -202,6 +210,8 @@ header {
 }
 
 nav .flex-row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 /* ----------------------------- */
@@ -241,6 +251,7 @@ nav .flex-row {
 }
 
 #section-testimonials {
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.7)),to(rgba(0, 0, 0, 0.7))), url("img/back-customers.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("img/back-customers.jpg");
 }
 /* ----------------------------- */
@@ -249,7 +260,11 @@ nav .flex-row {
 
 .meal-showcase {
     list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 100%;
+    -ms-flex: 100%;
     flex: 100%;
     width: 100%;
     margin: 0;
@@ -257,6 +272,8 @@ nav .flex-row {
 }
 
 .meal-showcase li {
+    -webkit-box-flex: 25%;
+    -ms-flex: 25%;
     flex: 25%;
     width: 25%;
 }
@@ -272,12 +289,17 @@ nav .flex-row {
     display: block;
     width: 100%;
     height: auto;
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
     opacity: 0.7;
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .meal-photo img:hover {
+    -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1;
 }
@@ -297,10 +319,13 @@ nav .flex-row {
     padding: 5px;
     font-size: 150%;
     margin-right: 25px;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
 }
 
 .steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 50px;
 }
@@ -345,7 +370,11 @@ nav .flex-row {
 }
 
 .cities-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -415,6 +444,7 @@ nav .flex-row {
     border-radius: 5px;
     width: 90%;
     margin-left: 5%;
+    -webkit-box-shadow: 0 2px 2px #efefef;
     box-shadow: 0 2px 2px #efefef;
 }
 
@@ -481,6 +511,8 @@ footer {
 
 footer ul {
     list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -492,6 +524,7 @@ footer li a:link, footer li a:visited {
     white-space: nowrap;
     color: #888;
     border: 0;
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
@@ -510,6 +543,8 @@ footer p {
 }
 
 .socials {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
@@ -521,6 +556,7 @@ footer p {
 .ion-social-twitter,
 .ion-social-googleplus,
 .ion-social-instagram {
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
