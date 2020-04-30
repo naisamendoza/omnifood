@@ -9,7 +9,9 @@
         <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css" />
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css" />
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+        
         <title>Omnifood</title>
         
     </head>
@@ -20,27 +22,29 @@
             <nav>
                 <div class="row flex-row">
                     <img class="logo" alt="omnifood logo white" src="resources/img/logo-white.png" />
-                    <ul class="navigation">
-                        <li><a href="#">food delivery</a></li>
-                        <li><a href="#">how it works</a></li>
-                        <li><a href="#">our cities</a></li>
-                        <li><a href="#">sign up</a></li>
+                    <img class="logo-black" alt="omnifood logo black" src="resources/img/logo.png" />
+                    <ul class="navigation js--navigation">
+                        <li><a href="#features">food delivery</a></li>
+                        <li><a href="#how-it-works">how it works</a></li>
+                        <li><a href="#cities">our cities</a></li>
+                        <li><a href="#sign-up">sign up</a></li>
                     </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round icon-md"></i></a>
                 </div>
             </nav>
             <div class="hero-text-box">
                 <h1>Goodbye junk food.<br>Hello super healthy meals.</h1>
-                <a class="btn btn-full" href="#">I’m hungry!</a>
-                <a class="btn btn-ghost" href="#section-features">Show me more</a>
+                <a class="btn btn-full js--scroll-to-plan" href="#">I’m hungry!</a>
+                <a class="btn btn-ghost js--scroll-to-features" href="#">Show me more</a>
             </div>
         </header>
         <!-- features -->
-        <section id="section-features">
+        <section class="section-features js--section-features" id="features">
             <div class="row">
                 <h2>Get food fast &mdash; not fast food.</h2>
                 <p class="long-copy">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
             </div>
-            <div class="row">
+            <div class="row js--wp-1">
                 <div class="col span-1-of-4 box">
                     <i class="ion-ios-infinite-outline icon-bg"></i>
                     <h3>Up to 365 days/year</h3>
@@ -64,7 +68,7 @@
             </div>
         </section>
         <!-- favorite meals -->
-        <section id="section-favorite">
+        <section class="section-favorite">
             <!-- row 1 -->
             <ul class="meal-showcase">
                 <li>
@@ -113,13 +117,13 @@
             </ul>
         </section>     
         <!-- how it works section -->
-        <section id="section-how">
+        <section class="section-how js--section-how" id="how-it-works">
             <div class="row">
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-2 step-box">
-                    <img src="resources/img/app-iPhone.png" alt="omnifood app on iphone" class="app-screen" />
+                    <img src="resources/img/app-iPhone.png" alt="omnifood app on iphone" class="app-screen js--wp-2" />
                 </div>
                 <div class="col span-1-of-2 step-box">
                     <div class="steps">
@@ -143,11 +147,11 @@
             </div>
         </section>       
         <!-- cities section -->
-        <section id="section-cities">
+        <section class="section-cities js--section-cities" id="cities">
             <div class="row">
                 <h2>We're currently in these cities</h2>
             </div>
-            <div class="row">
+            <div class="row js--wp-3">
                 <div class="col span-1-of-4 box">
                     <img src="resources/img/lisbon-3.jpg" alt="lisbon photo" />
                     <h3>Lisbon</h3>
@@ -215,7 +219,7 @@
             </div>
         </section>
         <!-- customer testimonials -->
-        <section id="section-testimonials">
+        <section class="section-testimonials">
             <div class="row">
                 <h2>Our customers can't live without us</h2>
             </div>
@@ -248,13 +252,13 @@
             </div>
         </section>       
         <!-- sign up section -->
-        <section id="section-price">
+        <section class="section-price js--section-price" id="sign-up">
             <div class="row">
                 <h2>Start eating healthy today</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-3">
-                    <div class="plan-box">
+                    <div class="plan-box js--wp-4">
                         <div>
                             <h3>Premium</h3>
                             <p class="plan-price"><span>399$</span> / month</p>
@@ -316,7 +320,7 @@
             </div>
         </section>       
         <!-- contact section -->
-        <section id="section-contact">
+        <section class="section-contact">
             <div class="row">
                 <h2>We're happy to hear from you</h2>
             </div>
@@ -404,5 +408,14 @@
                 <p>Copyright &copy; 2015 by Omnifood. All rights reserved.</p>
             </div>
         </footer>
+        
+        <!-- scripts -->
+        <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+        <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="resources/js/script.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
     </body>
+    
 </html>
